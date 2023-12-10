@@ -1,0 +1,77 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+#tabuleiro {
+  /* background-color: skyblue; */
+  background-image: url("./assets/flappybirdbg.png");
+}
+
+#overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  border: 2px solid #000000; 
+}
+
+#valor-entrada {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#iniciar-jogo {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#iniciar-jogo:hover {
+  background-color: #45a049;
+}
+
+#reiniciar-jogo {
+  background-color: #ff6347;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  margin-top: 10px; /* Adicione espaço entre os botões */
+  position: absolute;
+  top: calc(50% + 150px); /* Ajuste a posição vertical do botão */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#reiniciar-jogo:hover {
+  background-color: #e04b38;
+}
+
+/* Adicionando sombra suave ao botão */
+#reiniciar-jogo {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito de pressionar o botão */
+#reiniciar-jogo:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
